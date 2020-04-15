@@ -1,3 +1,6 @@
 # COVID-19
 ## Informacion para el proyecto
 Este proyecto va a dirigido al ámbito de las Tecnologías de la Información en la cual se tendrá un registro de los lugares donde exista la producción y/o distribución de productos de higiene básica, así como de materiales necesarios para hacer frente a la contingencia (mascarillas, gel antibacterial, cubre bocas, etc.). Para que las personas puedan llevar donativos. Este proyecto consta de 3 secciones fundamentales.
+- Aplicación Web (Angular): Esta aplicación podrá ser accedida desde cualquier navegador de internet donde podrán visualizar un mapa en tiempo real con todos los lugares posibles para recoger o llevar medicamentos.
+-	Servidor (NodeJS): El servidor se encargará de gestionar la información como la base de datos, la API REST y la seguridad e integridad de los datos.
+-	Aplicación Móvil (Android y iOS): En esta aplicación también será posible visualizar el mapa en tiempo real y todas las características de la aplicación web. Pero además la aplicación móvil tendrá un apartado donde se podrá ver la información actualizada del COVID-19 en México. La comunidad doctores o especialistas podrán registrarse en la plataforma y brindar diagnostico a través de un chat privado.
