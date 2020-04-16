@@ -1,0 +1,7 @@
+// Comandos de git
+git status
+git add .
+git commit -m "Mensaje"
+git push
+
+git pull
