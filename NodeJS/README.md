@@ -2,7 +2,7 @@
 
 ## Marco Antonio Diaz Diaz
 
-### Servidor de Sockets para Indian.
+### Servidor de Sockets para COVID-19 SERVER.
 
 Levantar servidor:
 
