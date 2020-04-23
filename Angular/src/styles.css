@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'Product';
+    src: url('./assets/fonts/product.ttf');
+}
+
+* {
+    font-family: 'Product';
+}
+
+h1,
+h2,
+h3 {
+    text-transform: none;
+}
