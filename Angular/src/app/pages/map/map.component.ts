@@ -10,6 +10,8 @@ export class MapComponent implements OnInit {
 
   constructor() { }
 
+  map: mapboxgl.Map;
+
   ngOnInit() {
     this.buildMap();
   }
@@ -18,8 +20,8 @@ export class MapComponent implements OnInit {
     // tslint:disable-next-line: no-shadowed-variable
     const mapboxgl = require('mapbox-gl/dist/mapbox-gl.js');
 
-    mapboxgl.accessToken = 'pk.eyJ1Ijoia2luZ21hcmtkYyIsImEiOiJjand0aXoyYXAwMHVkNDhwaXJoYnBvZ2l2In0.J_eYWUikijSCsX_NuLUemA';
-    const map = new mapboxgl.Map({
+    (mapboxgl as any).accessToken = 'pk.eyJ1Ijoia2luZ21hcmtkYyIsImEiOiJjand0aXoyYXAwMHVkNDhwaXJoYnBvZ2l2In0.J_eYWUikijSCsX_NuLUemA';
+    this.map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/mapbox/streets-v11',
       // zoom: 15,
