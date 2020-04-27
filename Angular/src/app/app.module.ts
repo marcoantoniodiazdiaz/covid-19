@@ -4,12 +4,16 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { InfoComponent } from './pages/info/info.component';
+import { MapComponent } from './pages/map/map.component';
+
+declare var require: any;
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    InfoComponent
+    InfoComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule
