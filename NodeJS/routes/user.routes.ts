@@ -11,7 +11,7 @@ import bcrypt from 'bcrypt';
 import { app } from './router';
 
 app.get('/users', [verificaToken], (req: Request, res: Response) => {
-  UserSchema.find().populate('institute').sort({ firstName: 1 }).exec((err, data) => {
+  UserSchema.find().sort({ firstName: 1 }).exec((err, data) => {
     if (err) {
       return res.status(400).json({
         ok: false,
@@ -29,7 +29,7 @@ app.get('/users', [verificaToken], (req: Request, res: Response) => {
 app.get('/users/:id', [verificaToken], (req: Request, res: Response) => {
   let id = req.params.id;
 
-  UserSchema.findById(id).populate('institute').exec((err, data) => {
+  UserSchema.findById(id).exec((err, data) => {
     if (err) {
       return res.status(400).json({
         ok: false,
@@ -75,7 +75,7 @@ app.get('/users/firstName/:firstName', [verificaToken], (req: Request, res: Resp
 app.post('/users', (req: Request, res: Response) => {
   let body = req.body;
 
-  let user = new UserSchema({
+  const user = new UserSchema({
     firstName: body.firstName,
     location: body.location,
     email: body.email,

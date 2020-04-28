@@ -1,37 +1,45 @@
 # Formatos y campos de la base de datos
 
 ## Tablas
-### User
-- Id `PK int`
-- FirstName `String`
-- SecondName `String`
-- Password `String`
-- Institute `FK int`
-- Email `String`
-- Role `String`
-- Activated `String`
+### Usuarios
+- id `number`
+- nombre `string`
+- fechaNac `string`
+- ingreso `string`
+- activado `boolean`
+- foto `string`
+- email `string`
+- password `string`
 
-### Institute
-- Id `PK int`
-- Name `String`
-- Address `String`
+### Doctores
+- id `number`
+- nombre `string`
+- fechaNac `string`
+- ingreso `string`
+- activado `boolean`
+- foto `string`
+- email `string`
+- descripcion `string`
+- password `string`
 
-### Groups
-- Id `PK int`
-- Name `String`
-- CreateDate `String`
-- CreateUser `FK int`
+### Lugares
+- id `number`
+- direccionEscrita `string`
+- abre `string`
+- cierra `string`
+- lat `string`
+- lng `string`
+- admin `Usuarios`
+- password `string`
 
-### GroupsDetail
-- Id `PK int`
-- Group `FK int`
-- User `FK int`
-- UserDateLogin `String`
+### Chat
+- id
+- mensajes []
 
-### Assignment
-- Id `PK int`
-- ExpireDate `String`
-- PublishDate `String`
-- Points `String`
-- Description `String`
-- Group `FK int`
+### Productos
+- id `number`
+- nombre `string`
+- foto `string`
+- precio `number`
+- venta `Lugares`
+- existencia `number`
