@@ -7,6 +7,15 @@
     font-family: 'Product';
 }
 
+*::-webkit-scrollbar {
+    display: none;
+    /* Ocultar scroll */
+}
+
+button {
+    border-radius: 100px !important
+}
+
 h1,
 h2,
 h3 {

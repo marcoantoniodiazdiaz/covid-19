@@ -1,0 +1,32 @@
+.fondocss {
+    filter: brightness(0.4);
+    position: fixed;
+    min-width: 100%;
+    /* max-width: 100%; */
+    min-height: 100% !important;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-40%);
+    z-index: -1;
+}
+
+* {
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.form-control {
+    font-size: 120%;
+}
+
+.card {
+    border-radius: 20px;
+}
+
+.content {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}

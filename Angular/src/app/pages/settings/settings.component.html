@@ -1,0 +1,60 @@
+<div class="content">
+    <h1>Configuración</h1>
+    <div class="from-group">
+        <div class="custom-control custom-switch">
+            <input type="checkbox" class="custom-control-input" id="customSwitch2">
+            <label class="custom-control-label" for="customSwitch2">Modo oscuro</label>
+        </div>
+    </div>
+    <br>
+    <h3>Mis Datos</h3>
+    <div class="row" style="font-size: 130%;">
+        <div class="col-auto">Nombre:</div>
+        <div class="col-auto">Marco Antonio Diaz Diaz</div>
+        <div class="col-auto"><button class="btn btn-block btn-primary btn-sm">Cambiar</button></div>
+    </div>
+    <br>
+    <div class="row" style="font-size: 130%;">
+        <div class="col-auto">Fecha de nacimiento:</div>
+        <div class="col-auto">Marco Antonio Diaz Diaz</div>
+        <div class="col-auto"><button class="btn btn-block btn-primary btn-sm">Cambiar</button></div>
+    </div>
+    <br>
+    <div class="row" style="font-size: 130%;">
+        <div class="col-auto">Fecha de nacimiento:</div>
+        <div class="col-auto">Marco Antonio Diaz Diaz</div>
+        <div class="col-auto"><button class="btn btn-block btn-primary btn-sm">Cambiar</button></div>
+    </div>
+    <br>
+    <div class="form-group">
+        <div class="row">
+            <div class="col-auto" style="display: flex; align-items: center;">
+                Dia:
+            </div>
+            <div class="col-1">
+                <select class="form-control">
+                    <option *ngFor="let item of dias">{{ item }}</option>
+                </select>
+            </div>
+            <div class="col-auto" style="display: flex; align-items: center;">
+                Mes:
+            </div>
+            <div class="col-2">
+                <select class="form-control" id="exampleSelect1">
+                    <option *ngFor="let item of meses">{{ item }}</option>
+                </select>
+            </div>
+            <div class="col-auto" style="display: flex; align-items: center;">
+                Año:
+            </div>
+            <div class="col-1">
+                <select class="form-control" id="exampleSelect1">
+                    <option *ngFor="let item of anos">{{ item }}</option>
+                </select>
+            </div>
+            <div class="col-auto" style="display: flex; align-items: center;">
+                <button class="btn btn-block btn-primary btn-sm">Cambiar</button>
+            </div>
+        </div>
+    </div>
+</div>
