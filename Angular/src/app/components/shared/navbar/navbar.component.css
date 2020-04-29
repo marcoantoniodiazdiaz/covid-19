@@ -1,4 +1,10 @@
 a {
     text-transform: capitalize;
     font-size: 140%;
+    transition: 200ms ease-in-out;
+}
+
+a:hover {
+    color: black;
+    transition: 200ms ease-in-out;
 }

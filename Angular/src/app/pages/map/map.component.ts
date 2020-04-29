@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, enableProdMode } from '@angular/core';
 import * as mapboxgl from 'mapbox-gl';
 
 @Component({
@@ -24,9 +24,20 @@ export class MapComponent implements OnInit {
     this.map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/mapbox/streets-v11',
-      // zoom: 15,
+      zoom: 4,
       // center: [20.348806, 20.12],
+      center: [-101.25, 21.94],
     });
+    this.map.addControl(new mapboxgl.NavigationControl());
+    this.map.addControl(
+      new mapboxgl.GeolocateControl({
+        positionOptions: {
+          enableHighAccuracy: true,
+          // enableProdMode: true,
+        },
+        trackUserLocation: true
+      })
+    );
   }
 
 }

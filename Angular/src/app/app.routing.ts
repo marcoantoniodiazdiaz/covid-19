@@ -9,26 +9,13 @@ import { LoginComponent } from './pages/login/login.component';
 import { AppComponent } from './app.component';
 
 const routes: Routes = [
-  {
-    path: 'home', component: AppComponent, children: [
-      { path: '', redirectTo: '/login', pathMatch: 'full' },
-    ]
-  },
   { path: 'map', component: MapComponent },
   { path: 'info', component: InfoComponent },
   { path: 'settings', component: SettingsComponent },
   { path: 'login', component: LoginComponent },
-  // {
-  //   path: 'technologies', component: TechnologiesComponent, children: [
-  //     { path: '', redirectTo: 'lenguajes', pathMatch: 'full' },
-  //     { path: 'lenguajes', component: LenguagesComponent },
-  //     { path: 'databases', component: DatabasesComponent },
-  //     { path: 'frameworks', component: FrameworksComponent },
-  //     { path: 'design', component: DesignComponent },
-  //   ]
-  // },
-  { path: '*', redirectTo: 'map', pathMatch: 'full' },
-  { path: '', redirectTo: 'map', pathMatch: 'full' }
+  { path: 'login', component: LoginComponent },
+  { path: '*', redirectTo: 'login', pathMatch: 'full' },
+  { path: '', redirectTo: 'login', pathMatch: 'full' }
 ];
 
 @NgModule({
