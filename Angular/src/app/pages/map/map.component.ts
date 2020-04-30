@@ -38,6 +38,10 @@ export class MapComponent implements OnInit {
         trackUserLocation: true
       })
     );
+    this.map.setLayoutProperty('country-label', 'text-field', [
+      'get',
+      'name_' + 'spanish'
+    ]);
   }
 
 }

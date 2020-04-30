@@ -1,5 +1,6 @@
 <div class="content">
     <h1>Configuración</h1>
+    <hr>
     <div class="from-group">
         <div class="custom-control custom-switch">
             <input type="checkbox" class="custom-control-input" id="customSwitch2">
@@ -8,22 +9,18 @@
     </div>
     <br>
     <h3>Mis Datos</h3>
-    <div class="row" style="font-size: 130%;">
+    <div class="row" style="font-size: 130%; display: flex; align-items: center;">
         <div class="col-auto">Nombre:</div>
-        <div class="col-auto">Marco Antonio Diaz Diaz</div>
-        <div class="col-auto"><button class="btn btn-block btn-primary btn-sm">Cambiar</button></div>
+        <div class="col-auto">
+            <div class="form-group">
+                <input type="text" class="form-control" value="Marco Antonio Diaz Diaz">
+            </div>
+        </div>
     </div>
     <br>
     <div class="row" style="font-size: 130%;">
-        <div class="col-auto">Fecha de nacimiento:</div>
-        <div class="col-auto">Marco Antonio Diaz Diaz</div>
-        <div class="col-auto"><button class="btn btn-block btn-primary btn-sm">Cambiar</button></div>
-    </div>
-    <br>
-    <div class="row" style="font-size: 130%;">
-        <div class="col-auto">Fecha de nacimiento:</div>
-        <div class="col-auto">Marco Antonio Diaz Diaz</div>
-        <div class="col-auto"><button class="btn btn-block btn-primary btn-sm">Cambiar</button></div>
+        <div class="col-auto">Dirección:</div>
+        <div class="col-auto">Aruba #30 Col. El Potrero</div>
     </div>
     <br>
     <div class="form-group">
@@ -51,9 +48,6 @@
                 <select class="form-control" id="exampleSelect1">
                     <option *ngFor="let item of anos">{{ item }}</option>
                 </select>
-            </div>
-            <div class="col-auto" style="display: flex; align-items: center;">
-                <button class="btn btn-block btn-primary btn-sm">Cambiar</button>
             </div>
         </div>
     </div>

@@ -11,6 +11,8 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing';
 import { HttpClientModule } from '@angular/common/http';
 
+import { ChartsModule } from 'ng2-charts';
+
 declare var require: any;
 
 @NgModule({
@@ -27,6 +29,7 @@ declare var require: any;
     RouterModule,
     AppRoutingModule,
     HttpClientModule,
+    ChartsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -34,7 +34,13 @@
 
 ### Chat
 - id
-- mensajes []
+- personas `[Usuario, Doctor]`
+
+### Mensajes
+- id `number`
+- envio `Usuario | Doctor`
+- fechaHora `string`
+- chat `Chat`
 
 ### Productos
 - id `number`
@@ -43,3 +49,17 @@
 - precio `number`
 - venta `Lugares`
 - existencia `number`
+
+## Relaciones
+### Lugares
+- **admin** `Usuarios`
+
+### Chat
+- **personas** `[Usuario, Doctor]`
+
+### Mensajes
+- **envio** `Usuario | Doctor`
+- **chat** `Chat`
+
+### Productos
+- **venta** `Lugares`

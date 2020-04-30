@@ -1,5 +1,27 @@
 <div class="content">
-    <div class="row">
-
-    </div>
+    <h1 class="titulos text-center">Grafica</h1>
+    <h4 class="titulos text-center">Actualizado: 30/04/2020 16:29</h4>
+    <canvas baseChart width="400px" height="400" [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [colors]="lineChartColors" [legend]="lineChartLegend" [chartType]="lineChartType" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+    <h1 class="titulos text-center">Estados de la republica</h1>
+    <h4 class="titulos text-center">Actualizado: 30/04/2020 16:29</h4>
+    <table class="table table-sm table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Confirmados</th>
+                <th scope="col">Sospechosos</th>
+                <th scope="col">Fallecidos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>JALISCO</td>
+                <td>452</td>
+                <td>1452</td>
+                <td class="table-danger">21</td>
+            </tr>
+        </tbody>
+    </table>
 </div>

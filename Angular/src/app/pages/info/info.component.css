@@ -1,49 +1,18 @@
-.content {
+.titulos {
     padding-left: 1rem;
     padding-right: 1rem;
     padding-top: 1rem;
 }
 
-.card-header {
-    text-align: center;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+* {
+    letter-spacing: 0;
 }
 
-.card {
-    border-radius: 20px;
-}
-
-.numero-tarjeta {
-    font-size: 5rem;
-}
-
-.infectados {
-    transition: 200ms ease-in-out;
-}
-
-.infectados:hover {
+table {
     cursor: pointer;
-    background-color: #FFDFBA;
-    transition: 200ms ease-in-out;
 }
 
-.recuperados {
-    transition: 200ms ease-in-out;
-}
-
-.recuperados:hover {
-    cursor: pointer;
-    background-color: #EEEBFF;
-    transition: 200ms ease-in-out;
-}
-
-.fallecidos {
-    transition: 200ms ease-in-out;
-}
-
-.fallecidos:hover {
-    cursor: pointer;
-    background-color: #FFBFD3;
-    transition: 200ms ease-in-out;
+h4 {
+    margin-top: -30px !important;
+    text-transform: none;
 }
